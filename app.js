@@ -50,3 +50,12 @@ function halo(binatang) {
   console.log(`halo nama saya ${nama}`);
 }
 halo(binatang);
+
+// BLOCK SCOPE
+// var is a global scope because it can be accessed outside of the scope. but it can cause bug,
+// so we need to use let to minimize bug
+
+// data type string, number and boolean
+let iniString = "string";
+let iniNumber = 2;
+let isBoolean = true; // boolean use 'is' at the front to make us easier to know it is boolean data
