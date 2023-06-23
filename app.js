@@ -51,11 +51,40 @@ function halo(binatang) {
 }
 halo(binatang);
 
-// BLOCK SCOPE
+// BLOCK SCOPE & GLOBAL SCOPE
 // var is a global scope because it can be accessed outside of the scope. but it can cause bug,
 // so we need to use let to minimize bug
 
-// data type string, number and boolean
+// data type primitive string, number and boolean
 let iniString = "string";
 let iniNumber = 2;
 let isBoolean = true; // boolean use 'is' at the front to make us easier to know it is boolean data
+
+// non-primitive ada Array dan Object
+const iniArray = ["kucing", "anjing"];
+//built in function di array ada filter, maping untuk merubah nilai, 
+const iniObject = {
+  nama: "asep",
+  jenisKelamin: "perempuan",
+  umur: [22, 23, 24],
+};
+const iniObject1 = {
+  nama: "apes",
+  jenisKelamin: "laki-laki",
+  umur: [22, 23, 24],
+};
+const iniObject2 = {
+  nama: "sepa",
+  jenisKelamin: "perempuan",
+  umur: [22, 23, 24],
+};
+
+console.log(iniObject.umur[2]); //to call the second index in umur array from ini Object object
+
+// function declaration
+function sayHello(){
+
+}
+
+// variable
+const say
